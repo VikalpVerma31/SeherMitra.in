@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Post Job — LocalLink Naukri</title>
+<link rel="stylesheet" href="design.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">LocalLink Naukri</div>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="find-jobs.html">Find Jobs</a>
+    <a href="post-job.html" class="active">Post Job</a>
+    <a href="products.html">Products</a>
+    <a href="ai-assistant.html">AI</a>
+  </nav>
+  <div class="profile-pill" id="headerProfile">Profile</div>
+</header>
+
+<div class="layout">
+  <aside class="left-col">
+    <ul class="left-menu">
+      <li><a href="find-jobs.html">Find Jobs</a></li>
+      <li><a href="post-job.html" class="active">Post Job</a></li>
+      <li><a href="products.html">Local Products</a></li>
+      <li><a href="ai-assistant.html">AI Assistant</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-col">
+    <section class="card" id="postJobSection">
+      <h2>Post a Job (Shop Owners)</h2>
+
+      <div id="jobFormContainer">
+        <form id="jobForm">
+          <input type="text" id="jobTitle" placeholder="Job Title" required>
+          <input type="text" id="jobDescription" placeholder="Brief description" required>
+          <input type="text" id="jobSkills" placeholder="Required skills (comma separated)">
+          <input type="number" id="salary" placeholder="Salary (₹)">
+          <input type="text" id="jobLocation" placeholder="Location (city)" required>
+          <button type="submit">Post Job</button>
+        </form>
+      </div>
+
+      <p id="jobFormMessage" style="color:#a00; display:none;">
+        Only Shop Owners can post jobs. Set role to "Shop Owner" in Profile to access.
+      </p>
+    </section>
+  </main>
+
+  <aside class="right-col">
+    <div class="card">
+      <h4>Suggested Candidates</h4>
+      <ul id="suggestedCandidates"></ul>
+    </div>
+  </aside>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

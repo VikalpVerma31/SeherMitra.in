@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Find Jobs — LocalLink Naukri</title>
+<link rel="stylesheet" href="design.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">LocalLink Naukri</div>
+  <div class="search">
+    <input id="jobSearchInput" type="search" placeholder="Job title, skill or company" />
+    <input id="jobLocationInput" type="text" placeholder="Location (city)" />
+    <button id="jobSearchBtn">Search</button>
+  </div>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="find-jobs.html" class="active">Find Jobs</a>
+    <a href="post-job.html">Post Job</a>
+    <a href="products.html">Products</a>
+    <a href="ai-assistant.html">AI</a>
+  </nav>
+  <div class="profile-pill" id="headerProfile">Profile</div>
+</header>
+
+<div class="layout">
+  <aside class="left-col">
+    <ul class="left-menu">
+      <li><a href="find-jobs.html" class="active">Find Jobs</a></li>
+      <li><a href="post-job.html">Post Job</a></li>
+      <li><a href="products.html">Local Products</a></li>
+      <li><a href="ai-assistant.html">AI Assistant</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-col">
+    <section class="card">
+      <h2>Search Results</h2>
+      <div id="jobsResults"></div>
+    </section>
+
+    <section class="card">
+      <h3>Job Details</h3>
+      <div id="jobDetailPanel">Select a job to view details.</div>
+    </section>
+    
+  </main>
+
+  <aside class="right-col">
+    <div class="card">
+      <h4>Suggested Candidates (Job Seekers)</h4>
+      <ul id="candidateList"></ul>
+    </div>
+
+    <div class="card">
+      <h4>Trending Products</h4>
+      <ul id="trendingProducts"></ul>
+    </div>
+  </aside>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
